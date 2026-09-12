@@ -127,7 +127,7 @@
         </p>
       </div>
       <div class="products__grid products__grid--3">
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-catalog="vrati" role="button" tabindex="0">
           <div class="product-card__image">
             <img src="images/fb-08.jpg" alt="Входни и блиндирани врати" loading="lazy">
             <div class="product-card__overlay"></div>
@@ -138,9 +138,10 @@
             <p class="product-card__desc">
               Входни, интериорни и блиндирани врати — сигурност, стил и прецизен монтаж.
             </p>
+            <span class="product-card__cta">Виж модели →</span>
           </div>
         </article>
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-catalog="kronopol" role="button" tabindex="0">
           <div class="product-card__image">
             <img src="images/floor-kronopol-01.jpg" alt="Ламиниран паркет Kronopol" loading="lazy">
             <div class="product-card__overlay"></div>
@@ -151,9 +152,10 @@
             <p class="product-card__desc">
               Ламиниран паркет Kronopol — издръжливи декори, водоустойчиви колекции и немско качество.
             </p>
+            <span class="product-card__cta">Виж модели →</span>
           </div>
         </article>
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-catalog="classen" role="button" tabindex="0">
           <div class="product-card__image">
             <img src="images/floor-classen-lecce.jpg" alt="Ламиниран паркет Classen" loading="lazy">
             <div class="product-card__overlay"></div>
@@ -164,9 +166,10 @@
             <p class="product-card__desc">
               Немски ламиниран паркет Classen — високи класове на износ, Aqua Protect и стилни декори.
             </p>
+            <span class="product-card__cta">Виж модели →</span>
           </div>
         </article>
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-catalog="granitogres" role="button" tabindex="0">
           <div class="product-card__image">
             <img src="images/tile-01.jpg" alt="Гранитогрес" loading="lazy">
             <div class="product-card__overlay"></div>
@@ -177,9 +180,10 @@
             <p class="product-card__desc">
               Голям избор гранитогрес за под и стена — мраморни, каменни и дървесни ефекти.
             </p>
+            <span class="product-card__cta">Виж модели →</span>
           </div>
         </article>
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-catalog="lepila" role="button" tabindex="0">
           <div class="product-card__image product-card__image--contain">
             <img src="images/adhesive-02.jpg" alt="Лепила за плочки" loading="lazy">
             <div class="product-card__overlay"></div>
@@ -190,9 +194,10 @@
             <p class="product-card__desc">
               Професионални лепила за гранитогрес и камък — за сигурно и дълготрайно полагане.
             </p>
+            <span class="product-card__cta">Виж модели →</span>
           </div>
         </article>
-        <article class="product-card reveal">
+        <article class="product-card reveal" data-catalog="fugi" role="button" tabindex="0">
           <div class="product-card__image product-card__image--contain">
             <img src="images/grout-02.jpg" alt="Фуги за плочки" loading="lazy">
             <div class="product-card__overlay"></div>
@@ -203,6 +208,7 @@
             <p class="product-card__desc">
               Фугиращи смеси в богата цветова гама — завършекът на всеки гранитогресен проект.
             </p>
+            <span class="product-card__cta">Виж модели →</span>
           </div>
         </article>
       </div>
@@ -457,6 +463,23 @@
     </div>
   </footer>
 
+  <!-- Каталог модал -->
+  <div class="catalog-modal" id="catalogModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="catalogTitle">
+    <div class="catalog-modal__backdrop" id="catalogBackdrop"></div>
+    <div class="catalog-modal__panel">
+      <button class="catalog-modal__close" id="catalogClose" aria-label="Затвори">×</button>
+      <div class="catalog-modal__header">
+        <h2 class="catalog-modal__title" id="catalogTitle"></h2>
+        <p class="catalog-modal__subtitle" id="catalogSubtitle"></p>
+      </div>
+      <div class="catalog-modal__list" id="catalogList"></div>
+      <div class="catalog-modal__footer">
+        <a href="tel:+359893237187" class="btn btn--primary">Обадете се за цена</a>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
+  <script src="catalog.js"></script>
 </body>
 </html>
