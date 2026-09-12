@@ -1155,8 +1155,11 @@ a {
 .catalog-modal__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(26, 22, 18, 0.72);
-  backdrop-filter: blur(6px);
+  background: rgba(26, 22, 18, 0.78);
+}
+
+body.catalog-open {
+  overflow: hidden;
 }
 
 .catalog-modal__panel {
